@@ -1,0 +1,9 @@
+# Poetry / Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# PyCharm
+.idea/
+.claude/
+

@@ -1,0 +1,26 @@
+[project]
+name = "pytorch-transformer-de-to-en-translation"
+version = "0.1.0"
+description = "PyTorch Transformer for German-to-English translation"
+authors = [
+    {name = "Chinh Vo Wili", email = "chinhvowili@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "torch (==2.3.0)",
+    "torchtext (==0.18.0)",
+    "numpy (==2.4.6)",
+    "spacy (==3.8.14)",
+    "matplotlib (==3.11.0)",
+    "click (==8.4.2)",
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "de-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
